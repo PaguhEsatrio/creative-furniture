@@ -94,15 +94,12 @@
 
                     <div class="hero-content">
 
-                        <p class="hero-subtitle">Creative Furniture ID</p>
+                        <h2 class="h2 hero-title">Creative Furniture ID</h2>
 
-
-                        <h2 class="h2 hero-title">Rattan & Wood Furniture Custom</h2>
+                        <p class="hero-subtitle">Rattan & Wood Furniture Custom</p>
 
                         <p class="hero-text">
-                            More than just ordinary furniture, CraFurn ID brings your dreams to life!
-                            Custom wood and rattan furniture designed exclusively for your style and space.
-                            Let's chat with our consultants to build the perfect harmony of functionality and aesthetics.
+                        Weaving Creativity into Every Fiber of Wood and Rattan
                         </p>
 
                         <!-- <button class="btn">Learn More</button> -->
@@ -116,79 +113,140 @@
                 </div>
             </section>
 
-            <!-- 
-        - #SERVICE
+
+                        <!-- 
+        - #ABOUT
       -->
 
-            <section class="section service" id="services">
+      <section class="section about" id="about">
                 <div class="container">
 
-                    <h2 class="h2 section-title underline">Our Speciallization</h2>
+                    <figure class="about-banner">
+                        <img src="images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner" class="w-100 banner-animation">
+                    </figure>
 
-                    <ul class="service-list">
+                    <div class="about-content">
+
+                        <h2 class="h2 section-title underline">Creative Furniture ID ?</h2>
+
+                        <p class="about-text">
+                        Discover bespoke furniture at Creative Furniture ID, where we specialize in crafting personalized pieces from premium wood and rattan in Jepara, Indonesia. Our creations blend local craftsmanship with modern design, offering unique and durable furniture tailored to your style. Elevate your living spaces with the timeless elegance of Creative Furniture ID.
+                        </p>
+
+                        <ul class="stats-list">
+
+                            <li class="stats-card">
+                                <p class="h3 stats-title">10</p>
+
+                                <p class="stats-text">Satisfied Clients</p>
+                            </li>
+
+                            <li class="stats-card">
+                                <p class="h3 stats-title">100</p>
+
+                                <p class="stats-text">Project Lunched</p>
+                            </li>
+
+                            <li class="stats-card">
+                                <p class="h3 stats-title">4</p>
+
+                                <p class="stats-text">Years Completed</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 
+        - #FEATURES
+      -->
+
+            <section class="section features" id="features">
+                <div class="container" >
+
+                    <h2 class="h2 section-title underline">Why Us?</h2>
+
+                    <ul class="features-list">
 
                         <li>
-                            <div class="service-card">
+                            <div class="features-card">
 
-                                <div class="card-icon">
-                                    <ion-icon name="hammer-outline"></ion-icon>
+                                <div class="icon">
+                                    <ion-icon name="bulb-outline"></ion-icon>
                                 </div>
 
-                                <h3 class="h3 title">Strategy & Research</h3>
+                                <div class="content">
+                                    <h3 class="h3 title">Custom Just For You</h3>
 
-                                <p class="text">
-                                    Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus
-                                    suscipit, enim ex
-                                    venenatis ipsum, et porttitor.
-                                </p>
-
-                                <button class="card-btn" aria-label="Show More">
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                                </button>
+                                    <p class="text">
+                                    Our products can be customized to meet the preferences and needs of each customer, providing a unique and personalized shopping experience.
+                                    </p>
+                                </div>
 
                             </div>
                         </li>
 
                         <li>
-                            <div class="service-card">
+                            <div class="features-card">
 
-                                <div class="card-icon">
-                                    <ion-icon name="desktop-outline"></ion-icon>
+                                <div class="icon">
+                                    <ion-icon name="color-palette-outline"></ion-icon>
                                 </div>
 
-                                <h3 class="h3 title">Web Development</h3>
+                                <div class="content">
+                                    <h3 class="h3 title">Luxury Design</h3>
 
-                                <p class="text">
-                                    Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus
-                                    suscipit, enim ex
-                                    venenatis ipsum, et porttitor.
-                                </p>
+                                    <p class="text">
+                                    We offer products with luxurious and elegant designs, reflecting meticulous attention to detail and high-quality craftsmanship.
+                                    </p>
+                                </div>
 
-                                <button class="card-btn" aria-label="Show More">
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                                </button>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <figure class="features-banner">
+                        <img src="images/2.png" width="369" height="318" loading="lazy" alt="Features Banner" class="w-100 banner-animation">
+                    </figure>
+
+                    <ul class="features-list">
+
+                        <li>
+                            <div class="features-card">
+
+                                <div class="icon">
+                                    <ion-icon name="cash-outline"></ion-icon>
+                                </div>
+
+                                <div class="content">
+                                    <h3 class="h3 title">Affordable Price</h3>
+
+                                    <p class="text">
+                                    Despite the luxurious designs, we maintain affordable prices, ensuring good value for customers and accessibility to quality products.
+                                    </p>
+                                </div>
 
                             </div>
                         </li>
 
                         <li>
-                            <div class="service-card">
+                            <div class="features-card">
 
-                                <div class="card-icon">
-                                    <ion-icon name="globe-outline"></ion-icon>
+                                <div class="icon">
+                                    <ion-icon name="construct-outline"></ion-icon>
                                 </div>
 
-                                <h3 class="h3 title">Web Solution</h3>
+                                <div class="content">
+                                    <h3 class="h3 title">High Quality</h3>
 
-                                <p class="text">
-                                    Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus
-                                    suscipit, enim ex
-                                    venenatis ipsum, et porttitor.
-                                </p>
-
-                                <button class="card-btn" aria-label="Show More">
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                                </button>
+                                    <p class="text">
+                                    Our products are crafted from high-quality, sturdy wood, ensuring durability and resilience, with a focus on sustainability.
+                                    </p>
+                                </div>
 
                             </div>
                         </li>
@@ -198,57 +256,183 @@
                 </div>
             </section>
 
-            <!-- 
-        - #ABOUT
-      -->
-
-            <section class="section about" id="about">
+            
+            <section class="section blog" id="blog">
                 <div class="container">
 
-                    <figure class="about-banner">
-                        <img src="images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner" class="w-100 banner-animation">
-                    </figure>
+                    <h2 class="h2 section-title underline">All Categories</h2>
 
-                    <div class="about-content">
+                    <ul class="blog-list">
 
-                        <h2 class="h2 section-title underline">Why Our Agency</h2>
+                        <li>
+                            <div class="blog-card">
 
-                        <p class="about-text">
-                            In dictum aliquam turpis lacinia iaculis. Fusce vel malesuada magna. Nulla vel maximus risus. Donec
-                            volutpat metus
-                            lacinia risus accumsan, ac bibendum libero efficitur. Pellentesque nec nisi sit amet magna tempus
-                            hendrerit ut a odio.
-                        </p>
+                                <figure class="banner">
+                                    <a href="#">
+                                        <img src="https://source.unsplash.com/750x350?living-room" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                                    </a>
+                                </figure>
 
-                        <p class="about-text">
-                            Praesent rhoncus commodo tortor, id pulvinar nisl blandit at. Nulla facilisi. Quisque turpis ante,
-                            vehicula condimentum
-                            arcu.
-                        </p>
+                                <div class="content">
 
-                        <ul class="stats-list">
+                                    <h3 class="h3 title">
+                                        <a href="#">
+                                            Vestibulum massa arcu, consectetu pellentesque scelerisque.
+                                        </a>
+                                    </h3>
 
-                            <li class="stats-card">
-                                <p class="h3 stats-title">9875</p>
+                                    <p class="text">
+                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                                        imperdiet.
+                                    </p>
 
-                                <p class="stats-text">Satisfied Clients</p>
-                            </li>
+                                </div>
 
-                            <li class="stats-card">
-                                <p class="h3 stats-title">7894</p>
+                            </div>
+                        </li>
 
-                                <p class="stats-text">Project Lunched</p>
-                            </li>
+                        <li>
+                            <div class="blog-card">
 
-                            <li class="stats-card">
-                                <p class="h3 stats-title">65</p>
+                                <figure class="banner">
+                                    <a href="#">
+                                        <img src="images/blog-2.jpg" width="750" height="350" loading="lazy" alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
+                                    </a>
+                                </figure>
 
-                                <p class="stats-text">Years Completed</p>
-                            </li>
+                                <div class="content">
 
-                        </ul>
+                                    <h3 class="h3 title">
+                                        <a href="#">
+                                            Quisque egestas iaculis felis eget placerat ut pulvinar mi.
+                                        </a>
+                                    </h3>
 
-                    </div>
+                                    <p class="text">
+                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                                        imperdiet.
+                                    </p>
+
+                                    <div class="meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="2022-03-07">7 March, 2022</time>
+                                        </div>
+
+                                        <button class="comment" aria-label="Comment">
+                                            <ion-icon name="chatbubble-outline"></ion-icon>
+
+                                            <data value="15">15</data>
+                                        </button>
+
+                                        <button class="share" aria-label="Share">
+                                            <ion-icon name="share-social-outline"></ion-icon>
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="banner">
+                                    <a href="#">
+                                        <img src="images/blog-3.jpg" width="750" height="350" loading="lazy" alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
+                                    </a>
+                                </figure>
+
+                                <div class="content">
+
+                                    <h3 class="h3 title">
+                                        <a href="#">
+                                            Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere.
+                                        </a>
+                                    </h3>
+
+                                    <p class="text">
+                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                                        imperdiet.
+                                    </p>
+
+                                    <div class="meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="2022-03-07">7 March, 2022</time>
+                                        </div>
+
+                                        <button class="comment" aria-label="Comment">
+                                            <ion-icon name="chatbubble-outline"></ion-icon>
+
+                                            <data value="15">15</data>
+                                        </button>
+
+                                        <button class="share" aria-label="Share">
+                                            <ion-icon name="share-social-outline"></ion-icon>
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="banner">
+                                    <a href="#">
+                                        <img src="images/blog-4.jpg" width="750" height="350" loading="lazy" alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                                    </a>
+                                </figure>
+
+                                <div class="content">
+
+                                    <h3 class="h3 title">
+                                        <a href="#">
+                                            Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis.
+                                        </a>
+                                    </h3>
+
+                                    <p class="text">
+                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                                        imperdiet.
+                                    </p>
+
+                                    <div class="meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="2022-03-07">7 March, 2022</time>
+                                        </div>
+
+                                        <button class="comment" aria-label="Comment">
+                                            <ion-icon name="chatbubble-outline"></ion-icon>
+
+                                            <data value="15">15</data>
+                                        </button>
+
+                                        <button class="share" aria-label="Share">
+                                            <ion-icon name="share-social-outline"></ion-icon>
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
 
                 </div>
             </section>
