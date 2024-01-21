@@ -76,12 +76,12 @@
                 </ul>
 
             </nav>
-            <!-- 
+            
             <a href="#" class="btn">
                 <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
 
                 <span>Get A Quote</span>
-            </a> -->
+            </a>
 
             <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
                 <ion-icon name="menu-outline"></ion-icon>

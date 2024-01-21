@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body id="top">
@@ -68,14 +69,15 @@
                     <li class="navbar-item">
                         <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
                     </li>
-
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link" data-navbar-link>Contact Us</a>
-                    </li>
-
                 </ul>
 
             </nav>
+
+            <a href="https://heylink.me/Creativefurniture.id" class="btn">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+
+                <span>Contact US</span>
+            </a>
 
             <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
                 <ion-icon name="menu-outline"></ion-icon>
@@ -85,381 +87,532 @@
     </header>
 
     <main>
-        <article>
-            <!-- 
+        <!-- 
         - #HERO
       -->
-            <section class="hero" id="home">
-                <div class="container">
+        <section class="hero" id="home">
+            <div class="container">
 
-                    <div class="hero-content">
+                <div class="hero-content">
 
-                        <h2 class="h2 hero-title">Creative Furniture ID</h2>
+                    <h2 class="h2 hero-title">Creative Furniture ID</h2>
 
-                        <p class="hero-subtitle">Rattan & Wood Furniture Custom</p>
+                    <p class="hero-subtitle">Rattan & Wood Furniture Custom</p>
 
-                        <p class="hero-text">
-                        Weaving Creativity into Every Fiber of Wood and Rattan
-                        </p>
+                    <p class="hero-text">
+                        Unleashing Artistry with Every Strand: Diligently Weaving Creativity into the Very Fabric of Wood and Rattan, Stitching Together a Tapestry of Timeless Innovation and Exquisite Craftsmanship
+                    </p>
 
-                        <!-- <button class="btn">Learn More</button> -->
-
-                    </div>
-
-                    <figure class="hero-banner">
-                        <img src="images/kursi.png" width="694" height="529" loading="lazy" alt="hero-banner" class="w-100 banner-animation">
-                    </figure>
+                    <a href="https://heylink.me/Creativefurniture.id">
+                        <button class="btn">Contact Us</button>
+                    </a>
 
                 </div>
-            </section>
+
+                <figure class="hero-banner">
+                    <img src="images/kursi.png" width="694" height="529" loading="lazy" alt="hero-banner" class="w-100 banner-animation">
+                </figure>
+
+            </div>
+        </section>
 
 
-                        <!-- 
+        <!-- 
         - #ABOUT
       -->
 
-      <section class="section about" id="about">
-                <div class="container">
+        <section class="section about" id="about">
+            <div class="container">
 
-                    <figure class="about-banner">
-                        <img src="images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner" class="w-100 banner-animation">
-                    </figure>
+                <figure class="about-banner">
+                    <img src="images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner" class="w-100 banner-animation">
+                </figure>
 
-                    <div class="about-content">
+                <div class="about-content">
 
-                        <h2 class="h2 section-title underline">Creative Furniture ID ?</h2>
+                    <h2 class="h2 section-title underline">Creative Furniture ID ?</h2>
 
-                        <p class="about-text">
+                    <p class="about-text">
                         Discover bespoke furniture at Creative Furniture ID, where we specialize in crafting personalized pieces from premium wood and rattan in Jepara, Indonesia. Our creations blend local craftsmanship with modern design, offering unique and durable furniture tailored to your style. Elevate your living spaces with the timeless elegance of Creative Furniture ID.
-                        </p>
+                    </p>
 
-                        <ul class="stats-list">
+                    <ul class="stats-list">
 
-                            <li class="stats-card">
-                                <p class="h3 stats-title">10</p>
+                        <li class="stats-card">
+                            <p class="h3 stats-title">10</p>
 
-                                <p class="stats-text">Satisfied Clients</p>
-                            </li>
+                            <p class="stats-text">Satisfied Clients</p>
+                        </li>
 
-                            <li class="stats-card">
-                                <p class="h3 stats-title">100</p>
+                        <li class="stats-card">
+                            <p class="h3 stats-title">100</p>
 
-                                <p class="stats-text">Project Lunched</p>
-                            </li>
+                            <p class="stats-text">Project Lunched</p>
+                        </li>
 
-                            <li class="stats-card">
-                                <p class="h3 stats-title">4</p>
+                        <li class="stats-card">
+                            <p class="h3 stats-title">4</p>
 
-                                <p class="stats-text">Years Completed</p>
-                            </li>
+                            <p class="stats-text">Years Completed</p>
+                        </li>
 
-                        </ul>
-
-                    </div>
+                    </ul>
 
                 </div>
-            </section>
 
-            <!-- 
+            </div>
+        </section>
+
+        <section class="products">
+            <h2 class="h2 section-title underline">Category</h2>
+            <div class="all-products">
+                <div class="product">
+                    <img src="https://source.unsplash.com/186x200?living-room">
+                    <div class="product-info">
+                        <h4 class="product-title">Living Room
+                        </h4>
+                        <a class="product-btn" href="#">Detail</a>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://source.unsplash.com/186x200?bedroom">
+                    <div class="product-info">
+                        <h4 class="product-title">Bedroom
+                        </h4>
+                        <a class="product-btn" href="#">Detail</a>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://source.unsplash.com/186x200?dining-room">
+                    <div class="product-info">
+                        <h4 class="product-title">Dining Room
+                        </h4>
+                        <a class="product-btn" href="#">Detail</a>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://source.unsplash.com/186x200?project-cafe">
+                    <div class="product-info">
+                        <h4 class="product-title">Project Cafe
+                        </h4>
+                        <a class="product-btn" href="#">Detail</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
         - #FEATURES
       -->
 
-            <section class="section features" id="features">
-                <div class="container" >
+        <section class="section features" id="features">
+            <div class="container">
 
-                    <h2 class="h2 section-title underline">Why Us?</h2>
+                <h2 class="h2 section-title underline">Why Us?</h2>
 
-                    <ul class="features-list">
+                <ul class="features-list">
 
-                        <li>
-                            <div class="features-card">
+                    <li>
+                        <div class="features-card">
 
-                                <div class="icon">
-                                    <ion-icon name="bulb-outline"></ion-icon>
-                                </div>
+                            <div class="icon">
+                                <ion-icon name="bulb-outline"></ion-icon>
+                            </div>
 
-                                <div class="content">
-                                    <h3 class="h3 title">Custom Just For You</h3>
+                            <div class="content">
+                                <h3 class="h3 title">Custom Just For You</h3>
 
-                                    <p class="text">
+                                <p class="text">
                                     Our products can be customized to meet the preferences and needs of each customer, providing a unique and personalized shopping experience.
-                                    </p>
-                                </div>
-
+                                </p>
                             </div>
-                        </li>
 
-                        <li>
-                            <div class="features-card">
+                        </div>
+                    </li>
 
-                                <div class="icon">
-                                    <ion-icon name="color-palette-outline"></ion-icon>
-                                </div>
+                    <li>
+                        <div class="features-card">
 
-                                <div class="content">
-                                    <h3 class="h3 title">Luxury Design</h3>
+                            <div class="icon">
+                                <ion-icon name="color-palette-outline"></ion-icon>
+                            </div>
 
-                                    <p class="text">
+                            <div class="content">
+                                <h3 class="h3 title">Luxury Design</h3>
+
+                                <p class="text">
                                     We offer products with luxurious and elegant designs, reflecting meticulous attention to detail and high-quality craftsmanship.
-                                    </p>
-                                </div>
-
+                                </p>
                             </div>
-                        </li>
 
-                    </ul>
+                        </div>
+                    </li>
 
-                    <figure class="features-banner">
-                        <img src="images/2.png" width="369" height="318" loading="lazy" alt="Features Banner" class="w-100 banner-animation">
-                    </figure>
+                </ul>
 
-                    <ul class="features-list">
+                <figure class="features-banner">
+                    <img src="images/2.png" width="369" height="318" loading="lazy" alt="Features Banner" class="w-100 banner-animation">
+                </figure>
 
-                        <li>
-                            <div class="features-card">
+                <ul class="features-list">
 
-                                <div class="icon">
-                                    <ion-icon name="cash-outline"></ion-icon>
-                                </div>
+                    <li>
+                        <div class="features-card">
 
-                                <div class="content">
-                                    <h3 class="h3 title">Affordable Price</h3>
+                            <div class="icon">
+                                <ion-icon name="cash-outline"></ion-icon>
+                            </div>
 
-                                    <p class="text">
+                            <div class="content">
+                                <h3 class="h3 title">Affordable Price</h3>
+
+                                <p class="text">
                                     Despite the luxurious designs, we maintain affordable prices, ensuring good value for customers and accessibility to quality products.
-                                    </p>
-                                </div>
-
+                                </p>
                             </div>
-                        </li>
 
-                        <li>
-                            <div class="features-card">
+                        </div>
+                    </li>
 
-                                <div class="icon">
-                                    <ion-icon name="construct-outline"></ion-icon>
-                                </div>
+                    <li>
+                        <div class="features-card">
 
-                                <div class="content">
-                                    <h3 class="h3 title">High Quality</h3>
+                            <div class="icon">
+                                <ion-icon name="construct-outline"></ion-icon>
+                            </div>
 
-                                    <p class="text">
+                            <div class="content">
+                                <h3 class="h3 title">High Quality</h3>
+
+                                <p class="text">
                                     Our products are crafted from high-quality, sturdy wood, ensuring durability and resilience, with a focus on sustainability.
-                                    </p>
-                                </div>
-
+                                </p>
                             </div>
-                        </li>
 
-                    </ul>
+                        </div>
+                    </li>
 
+                </ul>
+
+            </div>
+        </section>
+
+
+        <h2 class="h2 section-title underline">Client Review</h2>
+        <section class="client">
+            <!-- Swiper -->
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Tempore, vero optio tempora delectus totam excepturi
+                                    dignissimos ipsa corporis maxime magni exercitationem non
+                                    necessitatibus animi iste dolore voluptate porro. Perferendis,
+                                    aut?
+                                </p>
+                                <div class="details">
+                                    <div class="imgBx">
+                                        <img src="images/user1.png" alt="user1" />
+                                    </div>
+                                    <h3>Someone Famous<br /><span>Creative Designer</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Tempore, vero optio tempora delectus totam excepturi
+                                    dignissimos ipsa corporis maxime magni exercitationem non
+                                    necessitatibus animi iste dolore voluptate porro. Perferendis,
+                                    aut?
+                                </p>
+                                <div class="details">
+                                    <div class="imgBx">
+                                        <img src="images/user1.png" alt="user1" />
+                                    </div>
+                                    <h3>Someone Famous<br /><span>Creative Designer</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Tempore, vero optio tempora delectus totam excepturi
+                                    dignissimos ipsa corporis maxime magni exercitationem non
+                                    necessitatibus animi iste dolore voluptate porro. Perferendis,
+                                    aut?
+                                </p>
+                                <div class="details">
+                                    <div class="imgBx">
+                                        <img src="images/user1.png" alt="user1" />
+                                    </div>
+                                    <h3>Someone Famous<br /><span>Creative Designer</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-            
-            <section class="section blog" id="blog">
-                <div class="container">
 
-                    <h2 class="h2 section-title underline">All Categories</h2>
+        <section class="section blog" id="blog">
+            <div class="container">
 
-                    <ul class="blog-list">
+                <h2 class="h2 section-title underline">New Product</h2>
 
-                        <li>
-                            <div class="blog-card">
+                <ul class="blog-list">
 
-                                <figure class="banner">
+                    <li>
+                        <div class="blog-card">
+
+                            <figure class="banner">
+                                <a href="#">
+                                    <img src="https://source.unsplash.com/750x350?living-room" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                                </a>
+                            </figure>
+
+                            <div class="content">
+
+                                <h3 class="h3 title">
                                     <a href="#">
-                                        <img src="https://source.unsplash.com/750x350?living-room" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                                        Living Room
                                     </a>
-                                </figure>
+                                </h3>
 
-                                <div class="content">
-
-                                    <h3 class="h3 title">
-                                        <a href="#">
-                                            Vestibulum massa arcu, consectetu pellentesque scelerisque.
-                                        </a>
-                                    </h3>
-
-                                    <p class="text">
-                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
-                                        imperdiet.
-                                    </p>
-
-                                </div>
+                                <p class="text">
+                                    Bring nature into your living room. Explore the beauty and warmth of our wooden and rattan furniture, precisely designed to create a comfortable and stylish living space.
+                                </p>
 
                             </div>
-                        </li>
 
-                        <li>
-                            <div class="blog-card">
+                        </div>
+                    </li>
 
-                                <figure class="banner">
+                    <li>
+                        <div class="blog-card">
+
+                            <figure class="banner">
+                                <a href="#">
+                                    <img src="https://source.unsplash.com/750x350?bedroom" width="750" height="350" loading="lazy" alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
+                                </a>
+                            </figure>
+
+                            <div class="content">
+
+                                <h3 class="h3 title">
                                     <a href="#">
-                                        <img src="images/blog-2.jpg" width="750" height="350" loading="lazy" alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
+                                        Bedroom
                                     </a>
-                                </figure>
+                                </h3>
 
-                                <div class="content">
-
-                                    <h3 class="h3 title">
-                                        <a href="#">
-                                            Quisque egestas iaculis felis eget placerat ut pulvinar mi.
-                                        </a>
-                                    </h3>
-
-                                    <p class="text">
-                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
-                                        imperdiet.
-                                    </p>
-
-                                    <div class="meta">
-
-                                        <div class="publish-date">
-                                            <ion-icon name="time-outline"></ion-icon>
-
-                                            <time datetime="2022-03-07">7 March, 2022</time>
-                                        </div>
-
-                                        <button class="comment" aria-label="Comment">
-                                            <ion-icon name="chatbubble-outline"></ion-icon>
-
-                                            <data value="15">15</data>
-                                        </button>
-
-                                        <button class="share" aria-label="Share">
-                                            <ion-icon name="share-social-outline"></ion-icon>
-                                        </button>
-
-                                    </div>
-
-                                </div>
+                                <p class="text">
+                                    With the touch of wood and rattan, your bedroom becomes a peaceful retreat. Explore our collection to find furniture that seamlessly combines comfort and the beauty of nature.
+                                </p>
 
                             </div>
-                        </li>
 
-                        <li>
-                            <div class="blog-card">
+                        </div>
+                    </li>
 
-                                <figure class="banner">
+                    <li>
+                        <div class="blog-card">
+
+                            <figure class="banner">
+                                <a href="#">
+                                    <img src="https://source.unsplash.com/750x350?dinning-room" width="750" height="350" loading="lazy" alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
+                                </a>
+                            </figure>
+
+                            <div class="content">
+
+                                <h3 class="h3 title">
                                     <a href="#">
-                                        <img src="images/blog-3.jpg" width="750" height="350" loading="lazy" alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
+                                        Dinning Room
                                     </a>
-                                </figure>
+                                </h3>
 
-                                <div class="content">
-
-                                    <h3 class="h3 title">
-                                        <a href="#">
-                                            Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere.
-                                        </a>
-                                    </h3>
-
-                                    <p class="text">
-                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
-                                        imperdiet.
-                                    </p>
-
-                                    <div class="meta">
-
-                                        <div class="publish-date">
-                                            <ion-icon name="time-outline"></ion-icon>
-
-                                            <time datetime="2022-03-07">7 March, 2022</time>
-                                        </div>
-
-                                        <button class="comment" aria-label="Comment">
-                                            <ion-icon name="chatbubble-outline"></ion-icon>
-
-                                            <data value="15">15</data>
-                                        </button>
-
-                                        <button class="share" aria-label="Share">
-                                            <ion-icon name="share-social-outline"></ion-icon>
-                                        </button>
-
-                                    </div>
-
-                                </div>
+                                <p class="text">
+                                    Enjoy a special dining experience with our wooden and rattan dining room collection. Innovative design and high-quality materials will create an unforgettable atmosphere for your gatherings.
+                                </p>
 
                             </div>
-                        </li>
 
-                        <li>
-                            <div class="blog-card">
+                        </div>
+                    </li>
 
-                                <figure class="banner">
+                    <li>
+                        <div class="blog-card">
+
+                            <figure class="banner">
+                                <a href="#">
+                                    <img src="https://source.unsplash.com/750x350?project-cafe" width="750" height="350" loading="lazy" alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                                </a>
+                            </figure>
+
+                            <div class="content">
+
+                                <h3 class="h3 title">
                                     <a href="#">
-                                        <img src="images/blog-4.jpg" width="750" height="350" loading="lazy" alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                                        Project Cafe
                                     </a>
-                                </figure>
+                                </h3>
 
-                                <div class="content">
-
-                                    <h3 class="h3 title">
-                                        <a href="#">
-                                            Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis.
-                                        </a>
-                                    </h3>
-
-                                    <p class="text">
-                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
-                                        imperdiet.
-                                    </p>
-
-                                    <div class="meta">
-
-                                        <div class="publish-date">
-                                            <ion-icon name="time-outline"></ion-icon>
-
-                                            <time datetime="2022-03-07">7 March, 2022</time>
-                                        </div>
-
-                                        <button class="comment" aria-label="Comment">
-                                            <ion-icon name="chatbubble-outline"></ion-icon>
-
-                                            <data value="15">15</data>
-                                        </button>
-
-                                        <button class="share" aria-label="Share">
-                                            <ion-icon name="share-social-outline"></ion-icon>
-                                        </button>
-
-                                    </div>
-
-                                </div>
+                                <p class="text">
+                                    Give your cafe project a unique character with our wooden and rattan furniture. Innovative design and high-quality materials will provide an unforgettable experience for your customers
+                                </p>
 
                             </div>
-                        </li>
 
-                    </ul>
+                        </div>
+                    </li>
 
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="contact">
+            <div>
+                <div class="form">
+                    <div class="contact-info">
+                        <h3 class="title">Let's get in touch</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                            dolorum adipisci recusandae praesentium dicta!
+                        </p>
+
+                        <div class="info">
+                            <div class="information">
+                                <img src="img/location.png" class="icon" alt="" />
+                                <p>92 Cherry Drive Uniondale, NY 11553</p>
+                            </div>
+                            <div class="information">
+                                <img src="img/email.png" class="icon" alt="" />
+                                <p>lorem@ipsum.com</p>
+                            </div>
+                            <div class="information">
+                                <img src="img/phone.png" class="icon" alt="" />
+                                <p>123-456-789</p>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <p>Connect with us :</p>
+                            <div class="social-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <span class="circle one"></span>
+                        <span class="circle two"></span>
+
+                        <form action="index.html" autocomplete="off">
+                            <h3 class="title">Contact us</h3>
+                            <div class="input-container">
+                                <input type="text" name="name" class="input" />
+                                <label for="">Username</label>
+                                <span>Username</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="email" name="email" class="input" />
+                                <label for="">Email</label>
+                                <span>Email</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="tel" name="phone" class="input" />
+                                <label for="">Phone</label>
+                                <span>Phone</span>
+                            </div>
+                            <div class="input-container textarea">
+                                <textarea name="message" class="input"></textarea>
+                                <label for="">Message</label>
+                                <span>Message</span>
+                            </div>
+                            <input type="submit" value="Send" class="btn" />
+                        </form>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Right Reserved
+                </p>
+            </div>
+
+        </footer>
 
 
 
-            <!-- 
+        <!-- 
     - #GO TO TOP
   -->
 
-            <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
-                <ion-icon name="arrow-up-outline"></ion-icon>
-            </a>
-
-
-
-
-            <!-- 
+        <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+        <!-- 
     - custom js link
   -->
-            <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
 
-            <!-- 
+        <!-- 
     - ionicon link
   -->
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2,
+                    slideShadows: true,
+                },
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
 
 </body>
 
