@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="top">
@@ -34,7 +35,7 @@
 
             <div class="overlay" data-overlay></div>
 
-            <a href="#">
+            <a href="/">
                 <h1 class="logo">CreaFurn ID</h1>
             </a>
 
@@ -55,7 +56,7 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#about" class="navbar-link" data-navbar-link>About</a>
+                        <a href="#category" class="navbar-link" data-navbar-link>Category</a>
                     </li>
 
                     <li class="navbar-item">
@@ -63,11 +64,11 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#features" class="navbar-link" data-navbar-link>Features</a>
+                        <a href="#review" class="navbar-link" data-navbar-link>Review</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
+                        <a href="#product" class="navbar-link" data-navbar-link>Product</a>
                     </li>
                 </ul>
 
@@ -90,7 +91,7 @@
         <!-- 
         - #HERO
       -->
-        <section class="hero" id="home">
+        <section class="hero">
             <div class="container">
 
                 <div class="hero-content">
@@ -121,7 +122,7 @@
         - #ABOUT
       -->
 
-        <section class="section about" id="about">
+        <section class="section about" id="home">
             <div class="container">
 
                 <figure class="about-banner">
@@ -163,7 +164,7 @@
             </div>
         </section>
 
-        <section class="products">
+        <section class="products" id="category">
             <h2 class="h2 section-title underline">Category</h2>
             <div class="all-products">
                 <div class="product">
@@ -172,7 +173,6 @@
                         <h4 class="product-title">Living Room
                         </h4>
                         <a class="product-btn" href="#">Detail</a>
-
                     </div>
                 </div>
                 <div class="product">
@@ -209,7 +209,7 @@
         - #FEATURES
       -->
 
-        <section class="section features" id="features">
+        <section class="section features" id="services">
             <div class="container">
 
                 <h2 class="h2 section-title underline">Why Us?</h2>
@@ -303,7 +303,7 @@
 
 
         <h2 class="h2 section-title underline">Client Review</h2>
-        <section class="client">
+        <section class="client" id="review">
             <!-- Swiper -->
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
@@ -370,7 +370,7 @@
         </section>
 
 
-        <section class="section blog" id="blog">
+        <section class="section blog" id="product">
             <div class="container">
 
                 <h2 class="h2 section-title underline">New Product</h2>
@@ -480,89 +480,102 @@
 
                         </div>
                     </li>
-
                 </ul>
-
             </div>
         </section>
 
-        <section class="contact">
-            <div>
-                <div class="form">
-                    <div class="contact-info">
-                        <h3 class="title">Let's get in touch</h3>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                            dolorum adipisci recusandae praesentium dicta!
-                        </p>
+        <section>
+            <h2 class="h2 section-title underline">Contact Us</h2>
+            <div class="contactUs">
+                <div class="title">
+                </div>
+                <div class="box">
+                    <!-- Form -->
+                    <div class="contact form">
+                        <h3>Send a Message</h3>
+                        <form>
+                            <div class="formBox">
+                                <div class="row50">
+                                    <div class="inputBox">
+                                        <span>Name</span>
+                                        <input type="text" placeholder="Name" />
+                                    </div>
+                                </div>
+                                <div class="row50">
+                                    <div class="inputBox">
+                                        <span>Email</span>
+                                        <input type="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+                                    </div>
+                                </div>
+                                <div class="row100">
+                                    <div class="inputBox">
+                                        <span>Message</span>
+                                        <textarea placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row100">
+                                    <div class="inputBox">
+                                        <input type="submit" value="Send" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Info Box -->
+                    <div class="contact info">
+                        <h3>Contact Info</h3>
+                        <div class="infoBox">
+                            <div>
+                                <span>
+                                    <ion-icon name="location"></ion-icon>
+                                </span>
+                                <p>Jepara <br />Indonesia</p>
+                            </div>
+                            <div>
+                                <span>
+                                    <ion-icon name="mail"></ion-icon>
+                                </span>
+                                <a href="mailto:loremipsum@email.com">loremipsum@email.com</a>
+                            </div>
+                            <div>
+                                <span>
+                                    <ion-icon name="call"></ion-icon>
+                                </span>
+                                <a href="tel:+919845648470">+62 984 564 8470</a>
+                            </div>
+                            <!-- Social Media Links -->
+                            <ul class="sci">
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="link-outline"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-whatsapp"></ion-icon>
+                                    </a>
+                                </li>
 
-                        <div class="info">
-                            <div class="information">
-                                <img src="img/location.png" class="icon" alt="" />
-                                <p>92 Cherry Drive Uniondale, NY 11553</p>
-                            </div>
-                            <div class="information">
-                                <img src="img/email.png" class="icon" alt="" />
-                                <p>lorem@ipsum.com</p>
-                            </div>
-                            <div class="information">
-                                <img src="img/phone.png" class="icon" alt="" />
-                                <p>123-456-789</p>
-                            </div>
-                        </div>
-
-                        <div class="social-media">
-                            <p>Connect with us :</p>
-                            <div class="social-icons">
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="contact-form">
-                        <span class="circle one"></span>
-                        <span class="circle two"></span>
-
-                        <form action="index.html" autocomplete="off">
-                            <h3 class="title">Contact us</h3>
-                            <div class="input-container">
-                                <input type="text" name="name" class="input" />
-                                <label for="">Username</label>
-                                <span>Username</span>
-                            </div>
-                            <div class="input-container">
-                                <input type="email" name="email" class="input" />
-                                <label for="">Email</label>
-                                <span>Email</span>
-                            </div>
-                            <div class="input-container">
-                                <input type="tel" name="phone" class="input" />
-                                <label for="">Phone</label>
-                                <span>Phone</span>
-                            </div>
-                            <div class="input-container textarea">
-                                <textarea name="message" class="input"></textarea>
-                                <label for="">Message</label>
-                                <span>Message</span>
-                            </div>
-                            <input type="submit" value="Send" class="btn" />
-                        </form>
+                    <!-- Map -->
+                    <div class="contact map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53333.508926517265!2d110.7069153150422!3d-6.517030347680174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e71197423745411%3A0xe052620ab4baff0!2sCREATIVE%20FURNITURE!5e0!3m2!1sid!2sid!4v1705825911123!5m2!1sid!2sid" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <footer class="footer">
             <div class="footer-bottom">
@@ -570,23 +583,19 @@
                     &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Right Reserved
                 </p>
             </div>
-
         </footer>
-
-
 
         <!-- 
     - #GO TO TOP
   -->
-
         <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
             <ion-icon name="arrow-up-outline"></ion-icon>
         </a>
         <!-- 
     - custom js link
   -->
-        <script src="js/script.js"></script>
 
+        <script src="js/script.js"></script>
         <!-- 
     - ionicon link
   -->
@@ -613,7 +622,6 @@
                 },
             });
         </script>
-
 </body>
 
 </html>
