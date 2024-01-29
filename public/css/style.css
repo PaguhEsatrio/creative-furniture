@@ -300,7 +300,6 @@ body {
 
 .header {
     --color: var(--white);
-
     position: absolute;
     top: 0;
     left: 0;
@@ -312,7 +311,6 @@ body {
 
 .header.active {
     --color: var(--Primary);
-
     position: fixed;
     background-color: var(--white);
     box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.1);

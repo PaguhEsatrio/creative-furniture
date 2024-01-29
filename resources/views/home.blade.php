@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Furniture ID</title>
+    <title>{{ $name }}</title>
     <!-- 
     - favicon
   -->
@@ -101,7 +101,7 @@
                     <p class="hero-subtitle">Rattan & Wood Furniture Custom</p>
 
                     <p class="hero-text">
-                        Unleashing Artistry with Every Strand: Diligently Weaving Creativity into the Very Fabric of Wood and Rattan, Stitching Together a Tapestry of Timeless Innovation and Exquisite Craftsmanship
+                        Unleashing Artistry with Every Strand Diligently Weaving Creativity into the Very Fabric of Wood and Rattan, Stitching Together a Tapestry of Timeless Innovation and Exquisite Craftsmanship
                     </p>
 
                     <a href="https://heylink.me/Creativefurniture.id">
@@ -166,43 +166,31 @@
 
         <section class="products" id="category">
             <h2 class="h2 section-title underline">Category</h2>
+            @if ($categorys->count())
             <div class="all-products">
                 <div class="product">
-                    <img src="https://source.unsplash.com/186x200?living-room">
+                    <img src="https://source.unsplash.com/400x400?{{$categorys[0]->name}}" class="card-img-top" alt="{{$categorys[0]->name}}">
                     <div class="product-info">
-                        <h4 class="product-title">Living Room
+                        <h4 class="product-title">{{ $categorys[0]->name }}
                         </h4>
-                        <a class="product-btn" href="#">Detail</a>
+                        <a class="product-btn" href="/posts?category={{ $categorys[0]->slug }}">Detail</a>
                     </div>
                 </div>
+                @foreach ($categorys->skip(1) as $category)
                 <div class="product">
-                    <img src="https://source.unsplash.com/186x200?bedroom">
+                    <img src="https://source.unsplash.com/400x400?{{$category->name}}" class="card-img-top" alt="{{$category->name}}">
                     <div class="product-info">
-                        <h4 class="product-title">Bedroom
+                        <h4 class="product-title">{{ $category->name }}
                         </h4>
-                        <a class="product-btn" href="#">Detail</a>
+                        <a class="product-btn" href="/posts?category={{ $category->slug }}">Detail</a>
 
                     </div>
                 </div>
-                <div class="product">
-                    <img src="https://source.unsplash.com/186x200?dining-room">
-                    <div class="product-info">
-                        <h4 class="product-title">Dining Room
-                        </h4>
-                        <a class="product-btn" href="#">Detail</a>
-
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="https://source.unsplash.com/186x200?project-cafe">
-                    <div class="product-info">
-                        <h4 class="product-title">Project Cafe
-                        </h4>
-                        <a class="product-btn" href="#">Detail</a>
-
-                    </div>
-                </div>
+                @endforeach
             </div>
+            @else
+            <p class="text-center fs-4">Not Post Found.</p>
+            @endif
         </section>
 
         <!-- 
@@ -311,11 +299,7 @@
                         <div class="testimonialBox">
                             <div class="content">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Tempore, vero optio tempora delectus totam excepturi
-                                    dignissimos ipsa corporis maxime magni exercitationem non
-                                    necessitatibus animi iste dolore voluptate porro. Perferendis,
-                                    aut?
+                                    Meja Kayu dan Rotan ini benar-benar memukau! Desainnya yang elegan dan minimalis membuatnya menjadi pusat perhatian di ruangan. Kualitas kayu dan rotan yang digunakan terasa sangat solid, memberikan perasaan kestabilan. Saya sangat puas dengan pembelian ini
                                 </p>
                                 <div class="details">
                                     <div class="imgBx">
@@ -330,11 +314,7 @@
                         <div class="testimonialBox">
                             <div class="content">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Tempore, vero optio tempora delectus totam excepturi
-                                    dignissimos ipsa corporis maxime magni exercitationem non
-                                    necessitatibus animi iste dolore voluptate porro. Perferendis,
-                                    aut?
+                                    Meja ini tidak hanya indah secara visual, tetapi juga sangat praktis. Permukaannya yang luas memberikan ruang yang cukup untuk meletakkan semua barang penting saya. Saya juga menghargai sentuhan kerajinan tangan yang membuat setiap meja terasa unik. Sangat direkomendasikan!
                                 </p>
                                 <div class="details">
                                     <div class="imgBx">
@@ -349,11 +329,7 @@
                         <div class="testimonialBox">
                             <div class="content">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Tempore, vero optio tempora delectus totam excepturi
-                                    dignissimos ipsa corporis maxime magni exercitationem non
-                                    necessitatibus animi iste dolore voluptate porro. Perferendis,
-                                    aut?
+                                    Ketika saya mencari meja yang cocok untuk ruang kerja saya, Meja Kayu dan Rotan menjadi pilihan yang sempurna. Desainnya pas dengan gaya dekorasi modern saya, dan bahan berkualitas tinggi memberikan kepercayaan akan keberlanjutan produk. Sangat bangga dengan pembelian ini
                                 </p>
                                 <div class="details">
                                     <div class="imgBx">
@@ -377,110 +353,66 @@
 
                 <ul class="blog-list">
 
+                    @if ($posts->count())
                     <li>
                         <div class="blog-card">
 
                             <figure class="banner">
-                                <a href="#">
-                                    <img src="https://source.unsplash.com/750x350?living-room" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+
+                                <a href="/produk/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">
+                                    <img src="{{ asset('storage/'. $posts[0]->image) }}" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
                                 </a>
                             </figure>
 
                             <div class="content">
 
                                 <h3 class="h3 title">
-                                    <a href="#">
-                                        Living Room
+                                    <a href="/produk/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">
+                                        {{ $posts[0]->title  }}
                                     </a>
                                 </h3>
 
                                 <p class="text">
-                                    Bring nature into your living room. Explore the beauty and warmth of our wooden and rattan furniture, precisely designed to create a comfortable and stylish living space.
+                                    {!! $posts[0]->excerpt !!}
                                 </p>
-
                             </div>
 
                         </div>
                     </li>
 
+                    @foreach ($posts->skip(1) as $post)
                     <li>
                         <div class="blog-card">
 
                             <figure class="banner">
-                                <a href="#">
-                                    <img src="https://source.unsplash.com/750x350?bedroom" width="750" height="350" loading="lazy" alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
+                                <a href="/produk/{{ $post->slug }}" class="text-decoration-none text-dark">
+                                    <img src="{{ asset('storage/'. $post->image) }}" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
                                 </a>
                             </figure>
 
                             <div class="content">
 
                                 <h3 class="h3 title">
-                                    <a href="#">
-                                        Bedroom
+                                    <a href="/produk/{{ $post->slug }}" class="text-decoration-none text-dark">
+                                        {{ $post->title  }}
                                     </a>
                                 </h3>
 
                                 <p class="text">
-                                    With the touch of wood and rattan, your bedroom becomes a peaceful retreat. Explore our collection to find furniture that seamlessly combines comfort and the beauty of nature.
+                                    {!! $post->excerpt !!}
                                 </p>
 
                             </div>
 
                         </div>
                     </li>
+                    @endforeach
 
-                    <li>
-                        <div class="blog-card">
 
-                            <figure class="banner">
-                                <a href="#">
-                                    <img src="https://source.unsplash.com/750x350?dinning-room" width="750" height="350" loading="lazy" alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
-                                </a>
-                            </figure>
-
-                            <div class="content">
-
-                                <h3 class="h3 title">
-                                    <a href="#">
-                                        Dinning Room
-                                    </a>
-                                </h3>
-
-                                <p class="text">
-                                    Enjoy a special dining experience with our wooden and rattan dining room collection. Innovative design and high-quality materials will create an unforgettable atmosphere for your gatherings.
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="blog-card">
-
-                            <figure class="banner">
-                                <a href="#">
-                                    <img src="https://source.unsplash.com/750x350?project-cafe" width="750" height="350" loading="lazy" alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
-                                </a>
-                            </figure>
-
-                            <div class="content">
-
-                                <h3 class="h3 title">
-                                    <a href="#">
-                                        Project Cafe
-                                    </a>
-                                </h3>
-
-                                <p class="text">
-                                    Give your cafe project a unique character with our wooden and rattan furniture. Innovative design and high-quality materials will provide an unforgettable experience for your customers
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </li>
                 </ul>
+                @else
+                <p class="text-center fs-4">Not Post Found.</p>
+                @endif
             </div>
         </section>
 

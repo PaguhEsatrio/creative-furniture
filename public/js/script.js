@@ -33,8 +33,6 @@ for (let i = 0; i < navbarLinks.length; i++) {
 
 
 
-
-
 /**
  * header & go-top-btn active
  * when window scroll down to 400px
