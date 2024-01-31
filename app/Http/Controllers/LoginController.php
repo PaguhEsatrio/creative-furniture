@@ -26,7 +26,7 @@ class LoginController extends Controller
         {
             $request->session()->regenerate();
 
-            return redirect()->intended('/dashboard/post');
+            return redirect()->intended('/dashboard/posts');
         }
         return back()->with('loginError', 'Login Failed!!!');
 

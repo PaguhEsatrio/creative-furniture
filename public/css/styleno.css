@@ -1,22 +1,46 @@
+a {
+  font-family: "Poppins", sans-serif;
+}
 
- .form-signin .form-floating:focus-within {
+.navbar .navbar-brand {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+.superNav {
+    font-size: 13px;
+}
+.form-control {
+    outline: none !important;
+    box-shadow: none !important;
+}
+@media screen and (max-width: 540px) {
+    .centerOnMobile {
+        text-align: center;
+    }
+}
+
+.navbar-nav .nav-link.active {
+  color: brown;
+}
+
+.form-signin .form-floating:focus-within {
     z-index: 2;
-  }
-  
-  .form-signin input[type="email"] {
+}
+
+.form-signin input[type="email"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-  }
-  
-  .form-signin input[type="password"] {
+}
+
+.form-signin input[type="password"] {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-  }
+}
 
-  .form-registration input{
+.form-registration input {
     border-radius: 0;
     margin-bottom: -1px;
-  }
-  
+}

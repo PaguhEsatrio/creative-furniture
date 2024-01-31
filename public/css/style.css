@@ -1295,6 +1295,14 @@ body {
     transform: scale(1.1);
 }
 
+/* Media Query for Responsive View */
+@media screen and (max-width: 768px) {
+    .product {
+        width: 45%; /* Display two products per row */
+        margin: 2%; /* Adjust margin for spacing */
+    }
+}
+
 /* contact */
 
 .contactUs {
