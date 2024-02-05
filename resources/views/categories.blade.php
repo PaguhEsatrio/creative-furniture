@@ -1,27 +1,41 @@
-
 @extends('layouts.main')
 @section('container')
 
-<h1 class="mb-5">Post Categories</h1>
+<div class="mt-4 mb-1">
+    <h1 class="text-center" style="color:#e4865e">All Categories</h1>
+</div>
 
-<div class="container">
-    <div class="row">
-        @foreach ($categories as $category)
-        <div class="col-md-4">
-            <a href="/posts?category={{ $category->slug }}">
-                <div class="card bg-dark text-white mt-3">
-                    <img src="https://source.unsplash.com/500x500?{{$category->name}}" class="card-img" alt="{{$category->name}}">
-                    <div class="card-img-overlay d-flex align-items-center p-0">
-                    <h5 class="card-title text-center flex-fill p-4 fs-3" style="background-color: rgba(0,0,0,0.6)">{{ $category->name }}</h5>
-                    </div>
-                </div>
-            </a>
+<section class="products" id="category">
+
+    @if ($categorys->count())
+    <div class="all-products">
+
+
+        <div class="product">
+            <img src="https://source.unsplash.com/400x400?{{$categorys[0]->name}}" class="card-img-top" alt="{{$categorys[0]->name}}">
+            <div class="product-info">
+                <h4 class="product-title">{{ $categorys[0]->name }}
+                </h4>
+                <a class="product-btn" style="background-color: #e4865e;" href="/produk?category={{ $categorys[0]->slug }}">Detail</a>
+            </div>
+        </div>
+        @foreach ($categorys->skip(1) as $category)
+        <div class="product">
+            <img src="https://source.unsplash.com/400x400?{{$category->name}}" class="card-img-top" alt="{{$category->name}}">
+            <div class="product-info">
+                <h4 class="product-title">{{ $category->name }}
+                </h4>
+                <a class="product-btn" style="background-color: #e4865e;" href="/produk?category={{ $category->slug }}">Detail</a>
+
+            </div>
         </div>
         @endforeach
     </div>
-</div>
-    
+    @else
+    <p class="text-center fs-4">Not Post Found.</p>
+    @endif
+</section>
+
 
 
 @endsection
-

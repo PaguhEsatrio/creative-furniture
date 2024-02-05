@@ -21,7 +21,7 @@ class DashboardPostController extends Controller
     public function index()
     {
         return view('Dashboard.posts.index', [
-            'posts'=>Post::where('user_id', auth()->user()->id)->get()
+            'posts' => Post::all(),
             //buat paginate pakai yang bawah
            //'posts'=>Post::where('user_id', auth()->user()->id)->paginate(10)->withQueryString()
         ]);

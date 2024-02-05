@@ -14,7 +14,7 @@
     <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- 
     - google font link
@@ -42,7 +42,7 @@
             <nav class="navbar" data-navbar>
 
                 <div class="navbar-top">
-                    <a href="#" class="logo">CreaFurn ID</a>
+                    <a href="/" class="logo">CreaFurn ID</a>
 
                     <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
                         <ion-icon name="close-outline"></ion-icon>
@@ -173,7 +173,7 @@
                     <div class="product-info">
                         <h4 class="product-title">{{ $categorys[0]->name }}
                         </h4>
-                        <a class="product-btn" href="/posts?category={{ $categorys[0]->slug }}">Detail</a>
+                        <a class="product-btn" href="/produk?category={{ $categorys[0]->slug }}">Detail</a>
                     </div>
                 </div>
                 @foreach ($categorys->skip(1) as $category)
@@ -182,7 +182,7 @@
                     <div class="product-info">
                         <h4 class="product-title">{{ $category->name }}
                         </h4>
-                        <a class="product-btn" href="/posts?category={{ $category->slug }}">Detail</a>
+                        <a class="product-btn" href="/produk?category={{ $category->slug }}">Detail</a>
 
                     </div>
                 </div>
@@ -345,76 +345,76 @@
             </div>
         </section>
 
-
         <section class="section blog" id="product">
             <div class="container">
 
                 <h2 class="h2 section-title underline">New Product</h2>
+
+                <a class="section-title" href="/produk">
+                    <button class="btn">See All Product</button>
+                </a>
+
 
                 <ul class="blog-list">
 
                     @if ($posts->count())
                     <li>
                         <div class="blog-card">
-
                             <figure class="banner">
-
+                                @if ($posts[0]->image)
                                 <a href="/produk/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">
-                                    <img src="{{ asset('storage/'. $posts[0]->image) }}" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                                    <img src="{{ asset('storage/'. $posts[0]->image) }}" width="750" height="350" loading="lazy" alt="{{ $posts[0]->slug }}" class="img-cover">
                                 </a>
+                                @else
+                                <img src="https://source.unsplash.com/1200x400?{{ $posts[0]->category->name }}" class="img-cover" alt="{{ $posts[0]->category->name }}">
+                                @endif
                             </figure>
-
                             <div class="content">
-
                                 <h3 class="h3 title">
                                     <a href="/produk/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">
-                                        {{ $posts[0]->title  }}
+                                        {{ $posts[0]->title }}
                                     </a>
                                 </h3>
-
                                 <p class="text">
                                     {!! $posts[0]->excerpt !!}
                                 </p>
                             </div>
-
                         </div>
                     </li>
 
                     @foreach ($posts->skip(1) as $post)
                     <li>
                         <div class="blog-card">
-
                             <figure class="banner">
+                                @if ($post->image)
                                 <a href="/produk/{{ $post->slug }}" class="text-decoration-none text-dark">
-                                    <img src="{{ asset('storage/'. $post->image) }}" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                                    <img src="{{ asset('storage/'. $post->image) }}" width="750" height="350" loading="lazy" alt="{{ $post->slug }}" class="img-cover">
                                 </a>
+                                @else
+                                <img src="https://source.unsplash.com/750x350?{{ $post->category->name }}" class="img-cover" alt="{{ $post->category->name }}">
+                                @endif
                             </figure>
-
                             <div class="content">
-
                                 <h3 class="h3 title">
                                     <a href="/produk/{{ $post->slug }}" class="text-decoration-none text-dark">
-                                        {{ $post->title  }}
+                                        {{ $post->title }}
                                     </a>
                                 </h3>
-
                                 <p class="text">
                                     {!! $post->excerpt !!}
                                 </p>
-
                             </div>
-
                         </div>
                     </li>
                     @endforeach
-
+                    @else
+                    <p class="text-center fs-4">No Posts Found.</p>
+                    @endif
 
                 </ul>
-                @else
-                <p class="text-center fs-4">Not Post Found.</p>
-                @endif
             </div>
         </section>
+
 
         <section>
             <h2 class="h2 section-title underline">Contact Us</h2>
@@ -478,22 +478,22 @@
                             <!-- Social Media Links -->
                             <ul class="sci">
                                 <li>
-                                    <a href="#">
+                                    <a href="https://heylink.me/Creativefurniture.id">
                                         <ion-icon name="link-outline"></ion-icon>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.facebook.com/profile.php?id=100064154319528"">
                                         <ion-icon name="logo-facebook"></ion-icon>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.instagram.com/creative_furniture.id">
                                         <ion-icon name="logo-instagram"></ion-icon>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://api.whatsapp.com/send/?phone=6281327483890&text=hai+dengan+creativefurniture">
                                         <ion-icon name="logo-whatsapp"></ion-icon>
                                     </a>
                                 </li>
@@ -527,7 +527,7 @@
     - custom js link
   -->
 
-        <script src="js/script.js"></script>
+        <script src="/js/script.js"></script>
         <!-- 
     - ionicon link
   -->

@@ -27,24 +27,29 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
 
-Route::get('/posts', [PostController::class, 'index']);
-
+Route::get('/produk', [PostController::class, 'index']);
 Route:: get('/produk/{post:slug}', [PostController::class, 'show']);
 
 Route::get('/categories', function(){
     return view('categories', [
-        'title' =>'Post Categories',
+        'title' =>'All categories',
         'active' => 'categories',
-        'categories' =>Category::all(),
+        'categorys' =>Category::all(),
     ]);
 });
 
-Route::get('/register', [RegisterController::class, 'index'])->middleware('auth');
-Route::post('/register', [RegisterController::class, 'store']);
-
-
 Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class, 'checkSlug'])->middleware('auth');
 Route::resource('/dashboard/posts', DashboardPostController::class)->middleware('auth');
+
+
+Route::get('/dashboard/user', [RegisterController::class, 'index'])->middleware('auth');
+
+Route::get('/dashboard/user/create', [RegisterController::class, 'create'])->middleware('auth');
+Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/dashboard/password/{id}', [RegisterController::class, 'showPasswordForm'])->name('show.password.form');
+Route::post('/dashboard/password/{id}', [RegisterController::class, 'updatePassword'])->name('update.password');;
+
 
 // Route::get('/dashboard/categories/checkSlug', [AdminCategoryController::class, 'checkSlug'])->middleware('auth');
 // Route::resource('/dashboard/categories', AdminCategoryController::class)->except('show')->middleware('admin');

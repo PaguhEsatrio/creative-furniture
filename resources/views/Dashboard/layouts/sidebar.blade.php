@@ -4,7 +4,7 @@
         <li class="nav-item">
           <a class="nav-link {{ Request::is('dashboard/posts*') ? 'active' : '' }}" href="/dashboard/posts">
             <span data-feather="file-text"></span>
-            My Post
+            My Product
           </a>
         </li>
       </ul>
@@ -14,9 +14,9 @@
       </h6>
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link {{ Request::is('dashboard/categories*') ? 'active' : '' }}" href="/dashboard/categories">
+          <a class="nav-link {{ Request::is('dashboard/user*') ? 'active' : '' }}" href="/dashboard/user">
             <span data-feather="grid"></span>
-            Post Categories
+            User Mangament
           </a>
         </li>
       </ul>
