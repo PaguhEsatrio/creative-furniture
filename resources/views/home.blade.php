@@ -512,7 +512,7 @@
         <footer class="footer">
             <div class="footer-bottom">
                 <p class="copyright">
-                    &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Right Reserved
+                    &copy; 2024 <a href="https://www.instagram.com/creative_furniture.id/" class="copyright-link">Creative Furniture Id</a>. All Right Reserved
                 </p>
             </div>
         </footer>

@@ -4,7 +4,7 @@
 <div class="row justify-content-center mt-5">
     <div class="col-lg-5">
         <main class="form-registration">
-            <form action="/register" method="post">
+            <form action="/dashboard/user/create" method="post">
                 @csrf
                 <div class="form-floating">
                     <input type="text" name="name" class="form-control rounded-top @error('name') is-invalid @enderror" id="name" placeholder="Name" required value="{{ old('name') }}">

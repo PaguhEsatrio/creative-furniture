@@ -15,6 +15,8 @@
   <title>{{ $title }}</title>
 </head>
 
+
+
 <body>
   @include('partials.navbar')
 
@@ -64,7 +66,7 @@
   <!-- Copyright -->
   <div class="footer-bottom " style="color: white;">
     © 2020 
-    <a class="text-body" style="color: white !important;" href="https://mdbootstrap.com/">MDBootstrap.com</a> All Right Reserved
+    <a class="text-body" style="color: white !important;" href="https://www.instagram.com/creative_furniture.id/">Creative Furniture Id</a> All Right Reserved
   </div>
   <!-- Copyright -->
 </footer>

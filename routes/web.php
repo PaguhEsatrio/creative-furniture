@@ -45,7 +45,7 @@ Route::resource('/dashboard/posts', DashboardPostController::class)->middleware(
 Route::get('/dashboard/user', [RegisterController::class, 'index'])->middleware('auth');
 
 Route::get('/dashboard/user/create', [RegisterController::class, 'create'])->middleware('auth');
-Route::post('/register', [RegisterController::class, 'store']);
+Route::post('/dashboard/user/create', [RegisterController::class, 'store']);
 
 Route::get('/dashboard/password/{id}', [RegisterController::class, 'showPasswordForm'])->name('show.password.form');
 Route::post('/dashboard/password/{id}', [RegisterController::class, 'updatePassword'])->name('update.password');;
